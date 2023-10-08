@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\V1\GameController;
+use App\Http\Controllers\Api\V1\MapController;
 use App\Http\Controllers\Api\V1\PlayerController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -23,6 +24,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //api/v1/players
 Route::group(['prefix' => 'v1', 'namespace' => 'App\Http\Controllers\Api\V1'], function(){
     Route::apiResource('players', PlayerController::class);
-    Route::apiResource('games', GameController::class); 
+    Route::apiResource('games', GameController::class);
+    Route::apiResource('maps', MapController::class);
 
 });
