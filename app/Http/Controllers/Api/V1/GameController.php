@@ -3,12 +3,11 @@
 namespace App\Http\Controllers\Api\V1;
 
 use App\Models\Game;
-use App\Http\Requests\UpdateGameRequest;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\V1\GameResource;
 use App\Http\Resources\V1\GameCollection;
 use App\Http\Requests\V1\StoreGameRequest;
-
+use App\Http\Requests\V1\UpdateGameRequest;
 
 class GameController extends Controller
 {
@@ -57,7 +56,9 @@ class GameController extends Controller
      */
     public function update(UpdateGameRequest $request, Game $game)
     {
-        //
+        $game->update($request->all());
+
+        return new GameResource($game);
     }
 
     /**
