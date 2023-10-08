@@ -3,9 +3,12 @@
 namespace App\Http\Controllers\Api\V1;
 
 use App\Models\Player;
-use App\Http\Requests\StorePlayerRequest;
+
 use App\Http\Requests\UpdatePlayerRequest;
 use App\Http\Controllers\Controller;
+use App\Http\Resources\V1\PlayerResource;
+use App\Http\Resources\V1\PlayerCollection;
+use App\Http\Requests\V1\StorePlayerRequest;
 
 class PlayerController extends Controller
 {
@@ -14,7 +17,7 @@ class PlayerController extends Controller
      */
     public function index()
     {
-         return Player::all();
+         return new PlayerCollection(Player::all());
     }
 
     /**
@@ -30,7 +33,7 @@ class PlayerController extends Controller
      */
     public function store(StorePlayerRequest $request)
     {
-        //
+        return new PlayerResource(Player::create($request->all()));
     }
 
     /**
@@ -38,7 +41,7 @@ class PlayerController extends Controller
      */
     public function show(Player $player)
     {
-        //
+        return new PlayerResource($player);
     }
 
     /**

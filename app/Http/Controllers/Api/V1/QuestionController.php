@@ -1,10 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
 
 use App\Models\Question;
-use App\Http\Requests\StoreQuestionRequest;
+use App\Http\Requests\V1\StoreQuestionRequest;
 use App\Http\Requests\UpdateQuestionRequest;
+use App\Http\Controllers\Controller;
+use App\Http\Resources\V1\QuestionResource;
+use App\Http\Resources\V1\QuestionCollection;
+
 
 class QuestionController extends Controller
 {
@@ -13,7 +17,7 @@ class QuestionController extends Controller
      */
     public function index()
     {
-        //
+        return new QuestionCollection(Question::all());
     }
 
     /**
@@ -29,7 +33,7 @@ class QuestionController extends Controller
      */
     public function store(StoreQuestionRequest $request)
     {
-        //
+       return new QuestionResource(Question::create($request->all()));
     }
 
     /**
@@ -37,7 +41,7 @@ class QuestionController extends Controller
      */
     public function show(Question $question)
     {
-        //
+        return new QuestionResource($question);
     }
 
     /**
