@@ -4,6 +4,7 @@ use App\Http\Controllers\Api\V1\GameController;
 use App\Http\Controllers\Api\V1\MapController;
 use App\Http\Controllers\Api\V1\PlayerController;
 use App\Http\Controllers\Api\V1\QuestionController;
+use App\Http\Controllers\Api\V1\RespawnController;  
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -28,5 +29,6 @@ Route::group(['prefix' => 'v1', 'namespace' => 'App\Http\Controllers\Api\V1'], f
     Route::apiResource('games', GameController::class);
     Route::apiResource('maps', MapController::class);
     Route::apiResource('questions',QuestionController::class);
+    Route::apiResource('respawns',RespawnController::class);
 
 });
