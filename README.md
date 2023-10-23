@@ -1,3 +1,31 @@
+
+
+# Climate Flow Explorer - Proyecto de Concientización sobre el Uso del Agua
+
+## Descripción del Proyecto
+
+Climate Flow Explorer es un juego web desarrollado como parte de una competición en una hackatón que tuvo lugar en Arequipa en octubre de 2023. El juego tiene como objetivo conectar con usuarios en edad escolar que pueden no tener un profundo conocimiento de la importancia del agua. Su propósito fundamental es concientizar sobre el uso adecuado del agua y sensibilizar a la audiencia.
+
+## Características del Proyecto
+
+- **Juego en Primera Persona:** Climate Flow Explorer es un juego en primera persona en línea que transporta a los jugadores a un futuro distópico. En este futuro, los jugadores deben recolectar la mayor cantidad de agua posible mientras reciclan desechos industriales.
+
+- **Preguntas en Tiempo Real:** El juego presenta un desafío adicional, ya que los jugadores deben responder preguntas en tiempo real contra robots que intentan impedir su objetivo. Estas preguntas están relacionadas con el cuidado del agua y la conciencia ambiental.
+
+- **Combustible para una Máquina del Tiempo:** Al alcanzar la cantidad adecuada de agua, esta se convierte en combustible para una máquina del tiempo que permite a los jugadores viajar al año 2023. El objetivo final es advertir sobre la importancia del cuidado del agua en el futuro.
+
+## Tecnologías Utilizadas
+
+- **Laravel:** El backend del proyecto se desarrolló utilizando el framework Laravel, que proporciona una sólida base para la creación de aplicaciones web avanzadas.
+
+- **Endpoints de Algoritmos:** Se crearon endpoints que devuelven resultados de algoritmos de respanw y aleatoriedad. Estos resultados son consumidos por la parte frontal del juego.
+
+## Objetivos
+
+El objetivo principal de Climate Flow Explorer es educar a los jugadores, especialmente a los estudiantes en edad escolar, sobre la importancia del agua y el cuidado del medio ambiente. Al experimentar un futuro distópico y participar en la recolección de agua y el reciclaje, los jugadores se sensibilizan sobre estos temas cruciales.
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
