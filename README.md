@@ -2,7 +2,7 @@
 
 # Climate Flow Explorer - Proyecto de Concientización sobre el Uso del Agua
 
-## Descripción del Proyecto
+## Descripción del Proyectoo
 
 Climate Flow Explorer es un juego web desarrollado como parte de una competición en una hackatón que tuvo lugar en Arequipa en octubre de 2023. El juego tiene como objetivo conectar con usuarios en edad escolar que pueden no tener un profundo conocimiento de la importancia del agua. Su propósito fundamental es concientizar sobre el uso adecuado del agua y sensibilizar a la audiencia.
 
